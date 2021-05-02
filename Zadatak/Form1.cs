@@ -51,6 +51,23 @@ namespace WindowsFormsApp2
                    {    
                       listBox1.Items.Add(num.ToString());        
                                         }
+        int[] lotNums = newint[10] { 43, 31, 7, 22, 29, 16, 10, 4, 7, 41 };
+        int[] chosen = new int[6] { 31, 9, 8, 43, 22, 1 };
+        var winners = lotNums.Take(6);
+        listBox1.Items.Add("=======================");           
+         foreach (var num in winners)       
+              {          
+                        listBox1.Items.Add(num.ToString());        
+             }
+        listBox1.Items.Add("======================="); 
+        listBox1.Items.Add("=======================");       
+             var myNumbers = chosen.Intersect(winners);
+             foreach (var numbers in myNumbers)        
+                 {              
+                       listBox1.Items.Add(numbers.ToString());      
+                             }         
+                listBox1.Items.Add("=======================");
+                listBox1.Items.Add("Number of winners:" + myNumbers.Count( ) ); 
         }
 
     }
