@@ -29,6 +29,8 @@ namespace WindowsFormsApp2
             listBox1.Items.Add("Lowest number is: " + lowestNumber);       
             int highestNumber = numberList.Max();         
             listBox1.Items.Add("Highest number is: " + highestNumber);
+
+            double averageValue = numberList.Average();listBox1.Items.Add("Average of all values is: " + averageValue); 
         }
     }
 }
