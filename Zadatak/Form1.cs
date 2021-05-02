@@ -23,6 +23,7 @@ namespace WindowsFormsApp2
             listBox1.Items.Add("ARRAY ITEMS: 1, 2, 3, 4, 5"); 
             listBox1.Items.Add("========================");
             int listTotal = numberList.Sum();
+            listBox1.Items.Add("The SUM of the numbers is: " + listTotal); 
 
             int lowestNumber = numberList.Min();      
             listBox1.Items.Add("Lowest number is: " + lowestNumber);       
