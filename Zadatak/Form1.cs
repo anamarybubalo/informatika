@@ -22,6 +22,7 @@ namespace WindowsFormsApp2
             int[] numberList = new int[5] { 1, 2, 3, 4, 5 };
             listBox1.Items.Add("ARRAY ITEMS: 1, 2, 3, 4, 5"); 
             listBox1.Items.Add("========================");
+            int listTotal = numberList.Sum();
         }
     }
 }
